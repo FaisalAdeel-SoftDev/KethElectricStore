@@ -11,8 +11,8 @@ builder.Services.Configure<Email_Set>(builder.Configuration.GetSection("Email_Se
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.LoginPath = "/product/index";
-        options.AccessDeniedPath = "/home/index";
+        options.LoginPath = "/home/CustomError";
+        options.AccessDeniedPath = "/home/CustomError";
     });
 builder.Services.AddAuthorization(options=>
 {
