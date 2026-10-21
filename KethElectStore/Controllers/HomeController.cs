@@ -24,6 +24,7 @@ namespace KethElectStore.Controllers
 
         public IActionResult CustomError()
         {
+            //For login denied
             return View();
         }
         [Authorize(Policy="Admin")]
